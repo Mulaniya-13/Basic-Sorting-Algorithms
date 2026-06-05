@@ -20,7 +20,7 @@ void countSort(int arr[],int n){
     }
 
     //2nd step -O(range)=max-min
-    for(int i=minVal,j=0;i<=maxVal;i++){
+    for(int i=maxVal,j=0;i>=minVal;i--){
         while(freq[i]>0){
             arr[j++]=i;
             freq[i]--;
